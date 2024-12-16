@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "mn mn mn as"
+    "ft ft ft ft";
+}
+.grid-container > * {
+    padding: 30px;
+   
+    
+}
+header{
+  grid-area: hd; 
+  background-color: black; 
+}
+main{
+    grid-area: mn;
+    background-color: goldenrod;
+}
+aside{
+    grid-area: as;
+    background-color: green;
+    height: 200px;
+}
+footer{
+    grid-area: ft;
+    background-color: blue;
+    height: 50px;
+}

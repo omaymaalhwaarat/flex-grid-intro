@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color:#1B203D;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+font-size: 30px;
+font-weight: bold;
+color: white;
+background-color: #272C4A;
+
+}
+.btn{
+    color: red;
+    background-color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.m{
+    color: red;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:15px 10px;
+
+}
+.side-menu{
+    position: fixed;
+    background-color: #272C4A;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .soft{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.side-menu li{
+    font-size: 15px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.side-menu li:hover{
+    background-color:#1B203D;
+    color: white;
+}
+.container{
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    width: 78vw;
+    padding: 1.3vw 1vw 1.3vw 1vw;
+}
+
+.container .header{
+    display: flex;
+    color: white;   
+    justify-content: space-between;
+    padding-left: 2vw;
+} 
+
+.container .header div{
+    font-size: 2.5vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+img{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 3vw;
+}
+
+.my-par{
+    display: flex;
+    align-items: center;
+}
+.my-par .disc{
+    flex-direction: column;
+    align-items: start;
+    width: 10vw;
+    padding-left: 1vw;
+}
+.my-par .disc p{
+    margin: 0;
+    font-size: 1vw;
+    color: grey;
+}
+
+.my-par .disc .par1{
+    color: white;
+    font-weight: bold;
+}
+.container .content{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+
+
+}
+.container .content .cards{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .content .cards .card .box{
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #272C4A;
+
+}
+.container .content .cards .card .box p{
+    color: gray;
+
+}
+.container .content .cards .card .box span{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.container .content .cards .card .box i{
+    font-size: 30px;
+    color: gray;
+}
+
+.container .content .content-2{
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content-2 .recent-payments{
+    min-height: 50vh;
+    flex: 5;
+    background-color: #272C4A;
+    margin:0 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.container .content .content-2 .recent-payments h2{
+    color: red;
+    font-size: 15px;
+}
+.container .content .content-2 .total-sale{
+    flex: 2;
+    background-color: #272C4A;
+    min-height: 50vh;
+    margin: 0 25px;
+    
+}
+table{
+   
+    color: white;
+  text-align: left;
+  font-size: 1vw;
+  width: 40vw;
+  border-collapse: collapse;
+  margin-top: 2vw;
+}
+th{
+    font-size: 20px;
+    font-weight: bold;
+}
+th,td{
+    text-align: left;
+    padding: 8px;
+    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.1);
+}
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .single-chart {
+    width: 20vw;
+    justify-content: space-around ;
+  }
+  .circular-chart {
+    display: block;
+    margin: 4vw auto;
+    max-width: 14vw;
+    max-height: 23vh;
+  }
+  .circle-bg {
+    fill: white;
+    stroke: #eee;
+    stroke-width: 2.8;
+  }
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    /* stroke-linecap: round; */
+    color: red;
+    animation: progress 0.8s ease-out forwards;
+  }
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  .circular-chart.red .circle {
+    stroke: red;
+  }
+  .percentage {
+    fill: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 0.4em;
+    text-anchor: middle;
+  }

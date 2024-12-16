@@ -1,0 +1,53 @@
+.parent{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: orange;
+    width: 100%;
+    height: 1000px;
+
+}
+.parent > div{
+    padding: 10px;
+    font-size:30px;
+    text-align: center;
+    width:146px;
+    
+
+}
+
+.item1{
+    background-color: green;
+
+}
+.item2{
+    background-color: yellow;
+    
+}
+.item3{
+    background-color: blueviolet;
+    
+}
+.item4{
+    background-color: gray;
+    
+}
+.item5{
+    background-color: blue;
+    
+}
+.item6{
+    background-color: rgb(225, 146, 0);
+    
+}
+.item7{
+    background-color: pink;
+    
+}
+.item8{
+    background-color: red;
+    
+}
+.item9{
+    background-color: brown;
+    
+}

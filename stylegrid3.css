@@ -1,0 +1,10 @@
+.parent{
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
